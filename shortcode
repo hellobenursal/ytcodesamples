@@ -1,0 +1,6 @@
+// copy the code below and paste it to your child theme's functions.php file
+function dc_post_content( $atts ){
+	global $post;
+	return do_shortcode( $post->post_content ); ?>
+}
+add_shortcode( 'dc_post_content', 'dc_post_content' );
